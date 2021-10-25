@@ -1,0 +1,143 @@
+/******************
+ SECTION 2 FILTRES
+*******************/
+.container-filter{
+    display: flex;
+}
+
+.container-filter h3{
+    display: flex;
+    font-size: 18px;
+    margin-right: 3%;
+}
+
+.container-filter form{
+    display: flex;
+        align-items: center;
+}
+
+.container-filter form div{
+    border: 2px solid #dad9d9;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-right: 3%;
+}
+
+/* Réglages des icônes */
+.container-filter form div i{
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    color: #0065FC;
+    height: 50px;
+    font-size: 20px;
+    width: 50px; 
+    /* pr centrer les icones */
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    /* Positionnement icone sur input */
+    position: relative;
+     left: -5px;
+     bottom: 0px;
+}
+
+.container-filter form div:hover i{
+    background-color: #0065FC;
+    color: white;
+}
+
+.container-filter form div input{
+    background: transparent;
+    border: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container-filter form div input:hover{
+    color: #0065FC;
+}
+
+.div-sub-filter{
+    align-items: center;/* permet d'aligner verticalemt les elts */
+    display: flex;
+    margin-top: 3%;
+}
+
+.fa-info{
+    border: 1px solid #dad9d9;
+    border-radius: 50%;
+    color: #0065FC;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+}
+
+.div-sub-filter p{
+    margin: 0px 0px 0px 10px;
+}
+
+
+/**************************************************************
+                    MEDIA QUERIES tablette
+***************************************************************/
+@media (max-width: 991px) {
+    .container-filter{
+        display: block;
+    }
+
+    .container-filter form{
+        flex-wrap: wrap;
+    }
+
+    .container-filter div{
+        margin: 1% 0%;
+    }
+}
+
+
+/**************************************************************
+                    MEDIA QUERIES MOBILE
+***************************************************************/
+@media (max-width: 767px) {
+    /**********************
+        SECTION FILTRES
+    ***********************/
+    .container-filter h3{
+        margin-bottom: 1%;
+    }
+
+    .div-sub-filter p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px){
+    .container-filter{
+        margin: 0px 10px;
+    }
+
+    .container-filter div {
+        margin: 2% 0%;
+    }
+
+    .container-filter h3{
+        font-size: 20px;
+        margin-bottom: 3%;
+    }
+
+    .div-sub-filter{
+        align-items: baseline;
+        margin: 6% 0%;
+    }
+
+    .fa-info{
+        padding: 8px 15px 19px 12px;
+    }
+}

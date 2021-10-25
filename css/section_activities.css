@@ -1,0 +1,201 @@
+/***********************
+ SECTION ACTIVITES
+ **********************/
+
+ .container-activities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-card-activities{
+    display: flex;
+    justify-content: space-between;
+    width: 48.7%;
+}
+
+.container-card-activities img{
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.container-card-activities img:hover{
+    opacity: .5;
+}
+
+.h3-activities{
+    margin: 0%;
+    margin-left: 5%;
+}
+
+/***** Grandes Cartes gauche et droite ******/
+.card-activities-1{
+    width: 47%;
+}
+
+.card-activities-1 img{
+    height: 380px;
+}
+
+/***** Cartes de gauche ******/
+.container-card-activities-left2-3{
+    width: 47%;
+}
+
+.card-activities-left2{
+    margin-bottom: 15%;
+    height:220px;  
+}
+
+.card-activities-left2 img{
+    height:170px;
+}
+
+.card-activities-left3{
+    height: 180px;
+}
+
+.card-activities-left3 img{
+    height:120px;
+}
+
+/***** Cartes de droite ******/
+.container-card-activities-right2-3{
+    width: 47%;
+}
+
+.card-activities-right2{
+    margin-bottom: 15%;
+    height:180px;  
+}
+
+.card-activities-right2 img{
+    height:120px;
+}
+
+.card-activities-right3{
+    height:220px;
+}
+
+.card-activities-right3 img{
+    height:160px;
+}
+
+/**************************************************************
+                    MEDIA QUERIES DESKTOP
+***************************************************************/
+
+@media (max-width: 1074px) { 
+    .card .h3-calanques{
+        margin-right: 20px;
+        margin-top: 5px;
+    } 
+}
+
+/****************************************************************
+                        TABLETTE
+****************************************************************/
+
+@media (max-width: 991px) {
+    .container-activities{
+        flex-direction: column;
+    }
+
+    .container-card-activities{
+        margin-bottom:40px;
+        width: 100%;
+    }
+
+    .container-card-activities h3{
+        font-size: 18px;
+    }
+
+    .card-activities-1 img{
+        height: 400px;
+    }
+
+    .card-activities-left2, .card-activities-right2{
+        margin-bottom: 10%;
+    } 
+
+    .card-activities-left3{
+        height: 200px;
+    }
+
+    .card-activities-left3 img{
+        height: 140px;
+    }
+
+    .card .h3-calanques{
+        margin-top: 15px;
+    }
+
+    .card-activities-right3{
+        height: 240px;
+    }
+
+    .card-activities-right3 img{
+        height: 180px;
+    }
+}
+
+/**************************************************************
+                    MEDIA QUERIES MOBILE
+***************************************************************/
+
+@media (max-width: 767px) {
+    #container-activities{
+        max-width: 100%;
+    }
+
+    #container-activities h2{
+        padding: 0px 25px;
+        margin-bottom: 30px;
+    }
+    
+    .container-activities {
+        flex-direction: column;
+        padding: 0px 25px;
+    }
+
+    .container-card-activities{
+        flex-direction: column;
+    }
+    
+    .container-card-activities:first-child{
+        margin-bottom: 0px;
+    }
+
+    .container-card-activities a, .card-activities-left2, .card-activities-left3, .card-activities-right2, .card-activities-right3{
+        height: 240px;
+        margin: 0%;
+        margin-bottom: 7%;
+        width: 100%;
+    }
+
+    .container-card-activities-left2-3, .container-card-activities-right2-3 {
+        width: 100%;
+    }
+
+    .container-card-activities-left2-3{
+        margin-bottom: 0;
+    }
+
+    .container-card-activities img{
+        height:180px;
+    }
+
+    .container-card-activities:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 425px){
+    .container-card-activities a, .card-activities-left2, .card-activities-left3, .card-activities-right2, .card-activities-right3{
+        height: 210px;
+    }
+
+    .container-card-activities img{
+        height: 150px;
+    }
+}

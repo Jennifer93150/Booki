@@ -1,0 +1,81 @@
+.nav-container
+{
+    display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    margin: 50px 0px;
+}
+
+.element:nth-child(1){
+   flex: 2;
+}
+
+.nav-link{
+    color: gray;
+    padding: 65px 30px;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+
+.nav-link:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+.logo{
+    margin: 0px 50px;
+    height: 50px;
+    width: 90px;
+}
+
+.logo2{
+    display: none;
+}
+
+/**************************************************************
+                        MEDIA QUERIES Mobile
+***************************************************************/
+@media (max-width: 768px) {
+
+    .logo{
+        display: none;
+    }
+
+    .logo2{
+        display: inline;
+        height: 70px;
+        width: 140px;
+    }
+
+    .element{
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    } 
+
+    .element:nth-child(1){
+        flex: none;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .nav-link:hover{
+        border-top: none;
+    }
+
+    .element:nth-child(2), .element:nth-child(3) {
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 20px ;
+    }
+
+    .element:nth-child(2):hover, .element:nth-child(3):hover{
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 20px ;
+    }
+
+    .nav-link{ 
+        font-size: 18px;
+        margin: 0;
+    }
+    
+}

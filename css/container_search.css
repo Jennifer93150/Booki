@@ -1,0 +1,125 @@
+/**********************
+   SECTION 1 RECHERCHE
+***********************/
+.form-search{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form-search .fa-map-marker-alt{
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+    display: inline;
+    font-size: 18px;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.form-search input{
+    border: 1px solid #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 20px 12px 20px;
+    position: relative;
+     left: -5px;
+}
+
+.form-search button{
+    background-color: #0065FC;
+    border: none;
+    color: white;
+}
+.form-search .display-search{
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+    font-size: 18px;
+    padding: 15px 20px 12px 20px;
+    position: relative;
+     left: -9px;
+}
+
+.form-search .display-fa-search{
+    display: none;
+}
+
+/**************************************************************
+                    MEDIA QUERIES MOBILE
+***************************************************************/
+
+@media (max-width: 767px) {
+    .form-search .display-fa-search{
+        border-radius: 15px;
+        display: inline;
+        height: 48px;
+        position: relative;
+         left: -25px; 
+         top: -2px;
+        width: 53.5px;
+    }
+
+    .form-search .display-search{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    .container-search{
+        margin: 0px 10px;
+    }
+
+    .container-search input{
+        width: 69%;
+    }
+}
+
+@media (max-width: 413px){
+    .form-search input{
+        width: 62%;
+    }
+}
+
+@media (max-width: 375px){
+    .form-search input {
+        width: 65%;
+    }
+}
+
+@media (max-width: 367px){
+    .form-search input{
+        width: 61%;
+    }
+}
+
+@media (max-width: 348px){
+    .form-search input{
+        font-size: 16px;
+        padding: 16px 15px 12px;
+        width: 61%;
+    }
+}
+
+@media (max-width: 331px){
+    .form-search input{
+        width: 59%;
+    }
+}
+
+@media (max-width: 320px){
+    .form-search div{
+        height: 50px;
+    }
+
+    .form-search input{
+        font-size: 15px;
+        padding: 17px 15px 12px;
+        width: 60%;
+    }
+
+    .form-search .display-fa-search{
+        position: relative;
+         left: 213px; 
+         top: -48px;
+    }
+}
